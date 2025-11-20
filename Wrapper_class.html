@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 8 Assignment</title>
+  </head>
+  <body bgcolor="Alice blue">
+    <h2><u>Wrapper Class</u></h2>
+    <p>
+      A wrapper class in Java is a class that converts a primitive data type
+      into an object. <br />
+      Each primitive type (like int, char, boolean, etc.) has a corresponding
+      wrapper class (like Integer, Character, Boolean, etc.) in the java.lang
+      package.
+    </p>
+    <p>
+      We Need Wrapper class Because Java has two types of data: <br />
+      Primitive types: like int, char, boolean — these are not objects. <br />
+      Objects: needed when working with things like collections (ArrayList,
+      HashMap, etc.). <br />
+      But Java collections can only store objects, not primitive types. So we
+      use wrapper classes to convert primitives into objects.
+    </p>
+    <p>Examples of Wrapper Classes</p>
+    <table>
+      <tr>
+        <th>Primitive Type</th>
+        <th>Wrapper Class</th>
+      </tr>
+      <tr>
+        <td>int</td>
+        <td>Integer</td>
+      </tr>
+      <tr>
+        <td>char</td>
+        <td>Character</td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>Boolean</td>
+      </tr>
+      <tr>
+        <td>double</td>
+        <td>Double</td>
+      </tr>
+    </table>
+    <p>
+      Ex: <br />
+      int num = 5; // primitive <br />
+      Integer boxedNum = num; // wrapped into an object <br />
+      int unboxed = boxedNum; // unwrapped back to primitive
+    </p>
+    <p>
+      This Wrapper Class Allows primitives to be used in collections (like
+      ArrayList, which only store objects)
+    </p>
+    <hr />
+    <h2><u>Generics</u></h2>
+    <p>
+      Generics allow us to write classes, interfaces, and methods that can work
+      with different data types <br />
+      Instead of writing separate classes or methods for each data type, we can
+      define them once with a placeholder (like T) and Then the compiler enforce
+      type safety at compile time. <br />
+      Then we can caught Errors before running the program. <br />
+      The compiler checks that only the correct type is used <br />
+    </p>
+  </body>
+</html> 
