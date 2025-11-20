@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 7 Assignment</title>
+  </head>
+  <body bgcolor="pink">
+    <h1><u>Function Types</u></h1>
+    <h2>1]Anonymous Function</h2>
+    <p>An anonymous function means a function without a name.</p>
+    <p>this used as arguments to other functions</p>
+    <p>anonymous function Cannot be reused unless stored in a variable</p>
+    <pre>
+        EX:
+            const show = function () {
+             console.log("Anonymous function stored in a variable");
+            };
+            show();
+    </pre>
+    <hr />
+    <h2>2]Arrow Function</h2>
+    <p>Arrow functions are a shorter way to write functions in JavaScript.</p>
+    <p>
+      Uses => instead of function <br />
+      Arrow Function are good for short, simple functions
+    </p>
+    <pre>
+            Ex:
+                const add = (a, b) => a + b;
+                console.log(add(2, 3)); 
+                // Output will be 5 //
+
+        </pre
+    >
+    <hr />
+    <h2>3]Callback Function</h2>
+    <p>
+      A callback is a function passed as an argument to another function. <br />
+      this function Used when we want one function to run after another <br />
+      this is used Commonly in asynchronous operations (like loading data)
+    </p>
+    <pre>
+    Ex:
+        function greet(name, callback) {
+             console.log("Hi " + name);
+                callback();
+        }
+
+        greet("Bob", function () {
+            console.log("This is the callback function");
+        });
+</pre
+    >
+    <hr />
+    <h1><u>Introduction to DOM </u></h1>
+    <p>
+      The DOM (Document Object Model) in JavaScript is like a map of our webpage
+      that JavaScript uses to find and change things on the page.
+    </p>
+    <p><u>What is DOM</u></p>
+    <p>
+      DOM stands for Document Object Model. <br />
+      It’s a tree-like structure that represents all the elements on a webpage
+      (like headings, paragraphs, buttons, etc.). <br />
+      When a webpage loads, the browser creates this structure so JavaScript can
+      interact with it.
+    </p>
+    <p>
+      <u>What can JavaScript do with the DOM?</u> <br>
+      Change text or images on the page Add or remove elements (like showing a <br>
+      popup or hiding a menu) Change styles (like making text bold or changing <br>
+      colors) Respond to user actions (like clicking a button or typing in a form) <br>
+    </p>
+    <p>
+        Imagine our webpage is a TV. The DOM is the remote control that JavaScript uses
+         to change the channel, adjust the volume, or turn the TV on/off.
+    </p>
+    <hr>
+    <h2><u> Events in JavaScript</u></h2>
+    <pre>
+    Events are how JavaScript knows something has happened on a webpage—like a user clicking a button or typing in a form. JavaScript can then respond to these events.
+    <u>Common Event Types:</u>
+         Mouse Events: click, dblclick, mouseover, mouseout
+         Keyboard Events: keydown, keyup, keypress
+         Form Events: submit, change, focus, blur
+         Window Events: load, resize, scroll
+
+    </pre>
+    <hr>
+    <h2>What Is Camel Casing?</h2>
+    <pre>
+        Camel casing (or camelCase) is a naming style used in JavaScript where:
+        The first word is lowercase
+        Each following word starts with a capital letter
+        No spaces or underscores
+    </pre>
+  </body>
+</html>
