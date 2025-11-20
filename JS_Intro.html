@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Assignment</title>
+</head>
+<body bgcolor="Cloud Gray">
+    <h1><b><u>Introduction to Java Script </u></b></h1>
+    <h2>1] Data types in JS</h2>
+    <p>
+        JavaScript has different types of data:
+        <ol>
+        <li>String: text</li>  
+        <li>Number: Any numbers</li> 
+        <li>Boolean: true</li> 
+        <li> Array: list of items</li> 
+        <li>Object: key-value pairs</li>  
+        </ol>
+        <pre>
+            1) In String datatype it has text value 
+                Ex: "Hello"
+            2) In Number datatype we can store any number (whole number or decimal number)
+                Ex: 59 , 3.14
+            3) In Boolean datatype it has True or False value
+                Ex: True, False
+            4) In Array we have list of items 
+                Ex: let A = [1, 2, 3]
+            5) In object it has key value pair 
+                Ex: let Student =   {
+                                    name: "Rutuja",
+                                     age: 20,
+                                    };
+        </pre>
+    </p>
+    <hr>
+    <h2>2]Function</h2>
+    <p>
+        Function is a block of code that does a specific task. we can reuse the function whenever 
+        we want . it saves our time from rewriting same code again and again.
+    </p>
+    <pre>
+        Here a simple ex of Function
+
+        -we can create function using function keyword
+        <b>Ex:</b>
+        Function myname() {
+            console.log("Rutuja");
+        }
+        -we can call this function
+        myname();
+        then output will be "Rutuja"
+    </pre>
+    <hr>
+    <h2>3]Variable</h2>
+    <p>
+        variable is like a container that stores data. <br>
+        JavaScript gives us three keywords to declare variables
+
+    </p>
+    <h3>1]let</h3>
+    <p>
+        We Use let to declare a variable.
+        We can change its value later.
+        <pre>
+            it only works inside {} where it’s declared.</pre>
+        <pre>
+            <b>Ex:</b>
+                let name = "Rutuja";
+                name = "Jagtap"; // This is allowed
+        </pre>
+        
+    </p>
+    <hr>
+    <h3>2]Var</h3>
+    <p>
+        It is also a way to declare variables.
+        it Works like let, but it has different rules about where it's visible.
+        <pre>
+            it works inside the whole function.
+        </pre>
+        <pre>
+            <b>Ex:</b>
+                var age = 25;
+                age = 30;
+        </pre>
+        
+    </p>
+    <hr>
+    <h3>3]Const</h3>
+    <p>
+        It is Used to declare a variable that cannot be changed.
+        Once you give it a value, then we cannot change it.
+        <pre>
+             <b>Ex:</b>
+                const country = "India";
+                country = "USA"; 
+        </pre>
+        <b><u>Points to Remember</u></b> <br>
+        Use <b>let</b> when the value will change. <br>
+        Use <b>const</b> when the value should stay fixed. <br>
+        Avoid var in modern code (it can cause confusing bugs).
+       
+    </p>
+    <h2>4]Static Typed Language and Dynamic Typed Language</h2>
+    <pre>
+    Static Typed Language:
+            We must need to declare types like int, string, float, etc.
+            The computer checks for type errors before running the program.
+            If We try to assign a different type later, it gives an error.
+                <b>Ex:</b>(Java):
+                    int age = 25; 
+                    age = "twenty Five"; 
+    </pre>
+    <p>
+       Languages like C, Java, TypeScript
+    </p>
+<hr>
+    <pre>
+    Dynamic Typed Language:
+            In Dyanic Typed language We don’t declare types — just assign values.
+            The computer figures out the type while running.
+            We can also change the type later without errors.
+                <b>Ex:</b> (Python):
+                    age = 25      
+                    age = "twenty" 
+</pre> 
+<p>
+    Languages like JavaScript, Python
+</p>
+<hr>
+<h2>5]Hoisting</h2>
+<p><u>What is hoisting:</u></p>
+<p>Hoisting in JavaScript means that all variable and function declarations 
+    are moved to the top of their scope before the code runs.</p>
+<p>During the creation phase, declarations (not initializations)
+    are moved to the top of their scope. This is called hoisting</p>
+        <b>Ex:</b>
+    <pre>
+        Variables declared with var are hoisted and initialized with undefined
+            console.log(x); // undefined
+            var x = 5;
+        let and const: These are hoisted too, but they remain in the Temporal Dead Zone (TDZ) until initialized. 
+        Accessing them before declaration throws an error
+            console.log(y); // ReferenceError
+            let  y = 10;
+    </pre>
+    <p>
+        Declarations are hoisted, initializations are not.  <br>
+        var are hoisted with undefined. <br>
+        let and const are hoisted but inaccessible until initialized (TDZ). <br>
+        Function declarations are fully hoisted.
+    </p>
+</body>
+</html>
