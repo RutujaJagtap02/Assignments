@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 10 Assignment</title>
+  </head>
+  <body>
+    <h2><u>1.The Common Root:Throwable</u></h2>
+    <p>
+      In Java, both Error and Exception are subclasses of the Throwable class.
+      <br />
+      Only objects of type Throwable (or its subclasses) can be thrown using
+      throw and caught using catch.
+    </p>
+    <hr />
+    <h2><u>Error</u></h2>
+    <p>
+      What is an Error? : <br />
+      Definition: Errors indicate serious problems that occur at runtime,
+      usually outside the control of the program. <br />
+      Errors = Fatal problems, outside program’s control. <br />
+      Examples: <br />
+      - OutOfMemoryError → JVM runs out of memory. <br />
+      - StackOverflowError → Too many recursive calls overflow the stack. <br />
+      - NoClassDefFoundError → Required class not found. <br />
+      - Key Point: Errors are not meant to be caught or handled by applications.
+      They usually signal that the program should terminate. <br />
+      - Think of an Error like a system crash—we can’t fix it from inside our
+      program.
+    </p>
+    <hr />
+    <h2><u>Exception</u></h2>
+    <p>
+      What is an Exception? <br />
+      Definition: Exceptions represent conditions that a program can anticipate
+      and recover from. <br />
+      In Java, exceptions can be caught and handled using try-catch blocks so the program doesn’t 
+      crash. <br>
+      Exceptions = Handleable problems, inside program’s control. <br />
+      Examples: <br />
+      - IOException → Input/output operation fails. <br />
+      - NullPointerException → Accessing a variable that points to null. <br />
+      - ArithmeticException → Division by zero. <br />
+      - Key Point: Exceptions should be caught and handled using try-catch
+      blocks or declared with throws.
+    </p>
+    <p>Types of Exceptions</p>
+    <p>
+      1]Checked Exceptions: <br />
+      - Checked at compile-time. <br />
+      - Must be either handled (try-catch) or declared (throws). <br />
+      - Example: IOException, SQLException. <br />
+    </p>
+    <p>
+      2]Unchecked Exceptions (Runtime Exceptions): <br />
+      - Checked at runtime. <br />
+      - Not required to be handled explicitly. <br />
+      - Example: NullPointerException, ArrayIndexOutOfBoundsException. <br />
+    </p>
+  </body>
+</html>
