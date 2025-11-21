@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 9 Assignment</title>
+  </head>
+  <body>
+    <h1><u>Collection</u></h1>
+    <p>
+      A Collection in Java is a framework that provides classes and interfaces
+      to store and manipulate groups of objects. <br />
+      The collections has three main branches: List, Set, Queue. <br />
+      It makes handling data easier (adding, removing, searching, sorting).
+      <br />
+      It includes interfaces (like List, Set, Queue, Map) and their
+      implementations (like ArrayList, HashSet, etc.). <br />
+    </p>
+    <p>collections is like a big container that holds groups of objects.</p>
+    <hr>
+    <h2><u>1]List</u></h2>
+    list Means Ordered collection (things stay in the order we put them). <br />
+    It has Ordered collection means elements are stored in sequence. <br />
+    it Allows duplicates.The same element can appear multiple times. <br />
+    It has Index-based access . we can get elements by their position. <br />
+    it Maintains insertion order so elements stay in the order you added them.
+    <br />
+    <p>Common Implementations:</p>
+    <p>1)ArrayList</p>
+    <p>
+      Based on dynamic arrays. <br />
+      It is Fast for searching (random access). <br />
+      Slower for inserting/removing in the middle. <br />
+      ArrayList → like a resizable array.
+    </p>
+    <p>2)LinkedList</p>
+    Based on doubly linked list. <br />
+    Fast for inserting/removing anywhere. <br />
+    Slower for searching. <br />
+    LinkedList → good for adding/removing items quickly.
+    <p>3)Vector</p>
+    Similar to ArrayList but synchronized (thread-safe). <br />
+    Used less nowadays. <br />
+    Vector → older version of ArrayList, synchronized.
+    <hr />
+    <h2>2]Set</h2>
+    Set has Unique collection (no duplicates allowed). <br />
+    Order depends on the type of Set. <br />
+    No duplicates allowed . each element must be unique. <br />
+    Order depends on implementation. <br />
+    Useful when uniqueness matters (like storing IDs).
+
+    <p>Common Implementations:</p>
+    <p>1)HashSet</p>
+    In Hashset we Stores elements in a hash table. <br />
+    Very fast for add, remove, search. <br />
+    No guaranteed order. <br />
+    HashSet → fast, but no order.
+    <p>2)LinkedHashSet</p>
+    Stores elements in hash table + linked list. <br />
+    Maintains insertion order. <br />
+    <p>3)TreeSet</p>
+    Stores elements in a tree structure. <br />
+    Keeps elements sorted (ascending order). <br />
+    Slower than HashSet but useful for sorted data.
+    <hr />
+    <h2>3]Queue</h2>
+    Works like a line of people waiting. <br />
+    It Follows FIFO (First In, First Out). <br />
+    Used when processing tasks in order. <br />
+    Some queues allow priority-based ordering. <br />
+
+    <p>Common Implementations:</p>
+    <p>1)PriorityQueue</p>
+    Orders elements by priority (not just insertion order). <br />
+    Example: tasks with higher priority executed first. <br />
+
+    <p>2)ArrayDeque</p>
+    Double-ended queue. <br />
+    Can add/remove from both ends. <br />
+    Faster than LinkedList for queue operations. <br />
+    LinkedList (also works as a Queue) <br />
+    Can act as both List and Queue. <br>
+    Examples: PriorityQueue → elements ordered by priority. <br>
+    ArrayDeque → double-ended queue (can add/remove from both
+    ends). <br />
+    <hr />
+
+    <h2>Map</h2>
+    Map (separate from Collection interface but part of framework) <br />
+    Stores data as key-value pairs. <br />
+    Keys must be unique, values can repeat. <br />
+
+    <p>Common Implementations:</p>
+    <p>1)HashMap</p>
+    Stores data in hash table. <br />
+    Very fast for search and insert. <br />
+    No order maintained.
+
+    <p>2)LinkedHashMap</p>
+    Maintains insertion order of keys.
+
+    <p>3)TreeMap</p>
+    Stores keys in sorted order. <br />
+    Slower than HashMap but useful for ordered maps.
+
+    <p>4)Hashtable</p>
+    Older version of HashMap. <br />
+    Synchronized (thread-safe). <br />
+    Rarely used now. <br />
+    <p>
+      Examples: HashMap → fast, no order. <br />
+      LinkedHashMap → keeps insertion order.<br />
+      insertion order. TreeMap → keeps keys sorted. <br />
+      Hashtable → older, synchronized.
+    </p>
+  </body>
+</html>
