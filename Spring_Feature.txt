@@ -1,0 +1,25 @@
+Spring Boot is a tool in Java that makes building applications easier and
+faster by removing complicated setup.
+Spring is like a toolbox for Java developers. Instead of writing everything from scratch, 
+Spring gives you pre-built solutions for common problems such as connecting to databases, 
+handling security, or managing big applications. 
+It makes code clean, organized, and easy to test.
+
+Features :
+1)Fast Development: Quickly build apps without writing too much setup code.
+
+2)Auto-Configuration: It guesses and sets things up for you automatically.
+
+3)Embedded Server: You don’t need to install a separate server; it comes built-in.
+
+4)Microservices Friendly: Perfect for breaking big apps into smaller, manageable parts.
+
+5)Easy Integrations: Works smoothly with databases, security, and cloud tools.
+
+6)Production Ready: Apps can run live without extra effort.
+
+7)Wide Adoption: Used by many companies, so it’s reliable and well-supported.
+
+    It reduces boilerplate code (no need to write repetitive setup).
+    It makes applications scalable and maintainable.
+    It’s open-source and widely used, meaning lots of community support.
