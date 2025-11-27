@@ -1,0 +1,15 @@
+1]Primary Key :
+ Unique Identifier: Each row in a table must have a unique value in the primary key column.
+ No Duplicates: Two rows cannot share the same primary key value.
+ No Empty Values: Primary keys cannot be NULL.
+ Each table can have only one primary key (but it can be made of multiple columns together).
+ Example: In a Students table, the student_id column could be the primary key.
+ Every student has a unique ID number.
+
+ 2]Foreign Key :
+ A foreign key is like a reference to another table’s primary key.
+ Creates Relationships: A foreign key connects one table to another by referencing the other
+ table’s primary key.
+ Ensures Valid Data: It makes sure that the value in the foreign key column exists in the linked table.
+ Example: In an Enrollments table, the student_id column could be a foreign key that points to the 
+ student_id in the Students table. This ensures that every enrollment record belongs to a real student.
