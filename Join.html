@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1><u>Join</u></h1>
+    <p>
+      In MySQL, a JOIN is used to combine rows from two or more tables based on
+      a related column. <br />
+      It helps you pull connected information together (like linking customers
+      with their orders). There are several types of joins, each controlling how
+      data is matched and displayed.
+    </p>
+    <p>
+      <u> What is a JOIN ?</u> <br />
+      A JOIN links tables together using a common column (often a foreign key).
+      <br />
+      Example: We have a Customers table and an Orders table. To see which
+      customer placed which order, you join them using CustomerID. Without
+      joins, you’d have incomplete data because each table only stores part of
+      the information.
+    </p>
+    <h2><u>Types of Joins in MySQL</u></h2>
+    <p>
+      1. INNER JOIN : <br />
+      Returns rows where there is a match in both tables. <br />
+      If a customer has placed an order, you’ll see them. If not, they won’t
+      appear. its like "Show me only the overlaps." <br />
+    </p>
+    <p>
+      2. LEFT JOIN (or LEFT OUTER JOIN) : <br />
+      Returns all rows from the left table, and matched rows from the right
+      table. <br />
+      If there’s no match, you still see the left table’s data, but the right
+      side will show NULL. <br />
+      its like "Show me everything from the left, even if no match exists."
+    </p>
+    <p>
+      3. RIGHT JOIN (or RIGHT OUTER JOIN) : <br />
+      Opposite of LEFT JOIN. <br />
+      Returns all rows from the right table, and matched rows from the left
+      table. <br />
+      If no match, left side shows NULL. <br />
+      Think of it as: "Show me everything from the right, even if no match
+      exists." <br />
+    </p>
+    <p>
+      4. FULL JOIN (or FULL OUTER JOIN) :<br />
+      MySQL doesn’t support FULL JOIN directly, but you can simulate it using
+      UNION. <br />
+      Returns all rows when there is a match in either left or right table.
+      <br />
+      Think of it as: "Show me everything from both sides, matched or not."
+      <br />
+    </p>
+    <p>
+      5. CROSS JOIN :<br />
+      Returns the Cartesian product (all possible combinations of rows). <br />
+      If Customers has 10 rows and Orders has 5 rows, result = 50 rows. <br />
+      Think of it as: "Mix everything with everything." <br />
+    </p>
+    <p>
+      6. SELF JOIN: <br />
+      A table joined with itself. <br />
+      Useful for hierarchical data (like employees and their managers). <br />
+      Think of it as: "Compare rows within the same table."
+    </p>
+  </body>
+</html>
