@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>1. Props (short for "Properties")</h2>
+    <p>
+      Props are like inputs you give to a component. <br />
+      How they work: Props are read-only → you can’t change them inside the
+      component. <br />
+      They make components reusable because you can pass different values each
+      time.
+    </p>
+    <p>
+      Example: <br />
+      function Greeting(props) { <br />
+      return Hello, {props.name}!; <br />
+      }
+    </p>
+    Props = external data (like arguments to a function).
+    <hr />
+    <h2>2. Hooks</h2>
+    <p>
+      Hooks are special functions in React that let you “hook into” features
+      like state, lifecycle, and more. <br />
+      <br>
+      <u>Why they exist:</u> <br />
+      Before hooks, React used classes for state and lifecycle. Hooks made
+      everything simpler and usable in functional components. <br />
+      <br>
+      <u> Common Hooks:</u> <br>
+      useState → lets you add state to a component. <br />
+      useEffect → lets you run code when something changes (like fetching data
+      or updating the page title). <br />
+      useContext → lets you share data across components without passing props
+      manually. <br />
+      useRef → lets you directly access DOM elements or keep values between
+      renders.
+    </p>
+    Hooks = special functions that give components superpowers (like state, side effects, etc.).
+  </body>
+</html>
+
+
+
